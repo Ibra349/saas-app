@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button";
 
-const CompanionsLibrary = () => {
+const SignIn = () => {
     return (
         <div>
             <Button className="btn-signin">Sign In</Button>
@@ -8,5 +8,5 @@ const CompanionsLibrary = () => {
     )
 }
 
-export default CompanionsLibrary
+export default SignIn
 

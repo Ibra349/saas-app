@@ -1,7 +1,7 @@
-const SignIn = () => {
+const CompanionsLibrary = () => {
     return (
         <div>Companions</div>
     );
 }
 
-export default SignIn
+export default CompanionsLibrary
