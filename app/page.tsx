@@ -1,11 +1,45 @@
 import {Button} from "@/components/ui/button";
+import CompanionCard from "@/components/CompanionCard";
+import CompanionsList from "@/components/CompanionsList";
+import CTA from "@/components/CTA";
 
 const Page = () => {
   return (
-    <div>
-      <h1 className="text-2xl underline">Welcome to my Saas App</h1>
+    <main>
+      <h1 className="text-2xl underline">Nos Professeurs</h1>
+        <section className="home-section">
+            <CompanionCard
+                id="123"
+                name="Brainy"
+                topic="Neural network"
+                subject="Science"
+                duration ={45}
+                color="#ff8455"
+            />
+            <CompanionCard
+                id="124"
+                name="Nesting"
+                topic="Network"
+                subject="Science"
+                duration ={35}
+                color="#e5d0ff"
+                test={"de"}
+            />
+            <CompanionCard
+                id="125"
+                name="Network Simulation"
+                topic="How to create a network simulation"
+                subject="Science"
+                duration ={25}
+                color="#ffda6e"
+            />
+        </section>
+        <section className="home-section">
+            <CompanionsList/>
+            <CTA />
+        </section>
         <Button> Lets begin </Button>
-    </div>
+    </main>
   )
 }
 
